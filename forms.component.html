@@ -1,0 +1,35 @@
+<div>
+<form style="width: auto;" #LoginForm="ngForm" (ngSubmit)="onSubmit(LoginForm.value)">
+    <br>
+
+    <!-- SO INPUT -->
+    <div class="mb-3">
+        <div>
+            <label for="disabledTextInput" class="form-label">Support Organization</label>
+            <input type="text" id="disabledTextInput" name="supportOrg" class="form-control" [(ngModel)]="supportOrg"
+                #supportorg="ngModel" placeholder="SO " required>
+        </div>
+
+        <!-- SA INPUT -->
+        <div class="mb-3">
+            <div>
+                <label for="disabledTextInput" class="form-label">Support Group</label>
+                <input type="text" id="disabledTextInput" name="supportGrp" class="form-control"
+                    [(ngModel)]="supportGrp" #supportgrp="ngModel" placeholder="SA" required>
+            </div>
+        </div>
+
+        <!-- ITO_GCP_LAUNCH -->
+        <div class="mb-3">
+            <label for="disabledTextInput" class="form-label">Click to Select ITO GCP launch</label>
+            <select class="form-control form-select" #launchinfo="ngModel" name="launchInfo" [(ngModel)]="launchInfo"
+                required placeholder="hiiiii">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        <!-- SUBMIT BUTTON -->
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+</div>

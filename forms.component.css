@@ -1,0 +1,18 @@
+h1,h2,h3,label{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(1, 40, 75);
+    font-weight: bold;
+}
+
+input,select{
+    width: 20%;
+}
+/* 
+#onhoverhelp{
+    visibility: hidden;
+}
+#helpicon:hover ~ #onhoverhelp{
+    visibility: visible;
+    color: orangered;
+    width: 10%;
+} */
